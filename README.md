@@ -11,15 +11,15 @@ Each weekly folder will have three main files:
 ## 🚀 Final Project Overview: StreamPlus Premium-Tier Upgrade Targeting
 
 ### 🎯 Business Challenge
-StreamPlus Media aimed to **boost its ARPU** by encouraging Basic subscribers to upgrade to Premium. While past offers achieved an 11% conversion, they came with a significant drawback: a **2.5% increase in churn (📉 $55 LTV loss)** for non-converters. Successful upgrades, however, yielded **$96 in incremental annual revenue**. The core challenge was clear: maximize upgrade revenue while critically minimizing costly churn from untargeted offers.
+StreamPlus Media aimed to **boost its ARPU** by encouraging Basic subscribers to upgrade to Premium. While past offers achieved an 11% conversion, they came with a significant **2.5% increase in churn (📉 $55 LTV loss)** for non-converters. Successful upgrades, however, yielded **$96 in incremental annual revenue**. The core challenge was to find how to maximize upgrade revenue while critically minimizing costly churn from untargeted offers.
 
 ### 🛠️ Technical Approach
-We tackled this problem by developing a predictive model using **Python** 🐍 and essential libraries:
+We tackled this problem by developing a predictive model using **Python** 🐍 and libraries we found fit as tools to solve this problem:
 
 *   **Data Analysis (📊):** `pandas` for loading and inspection, `matplotlib` & `seaborn` for Exploratory Data Analysis (EDA).
-*   **Model Building (📈):** A `Logistic Regression` model from `sklearn` was chosen for its interpretability. We used `train_test_split` with `stratify=y` to handle class imbalance.
-*   **Insights & Optimization (💡):** Model coefficients were converted to **odds ratios** for actionable business insights. We prioritized **Precision** as the key metric due to the high cost of False Positives. The model was optimized to find the **optimal probability threshold** that maximizes **Net Value** (balancing $96 revenue vs. $55 LTV loss).
+*   **Model Building (📈):** A `Logistic Regression` model from `sklearn` for its interpretability. We used `train_test_split` with `stratify=y` to handle class imbalance.
+*   **Insights & Optimization (💡):** Model coefficients were converted to **odds ratios** for actionable business insights. We prioritized **Precision** as the key metric because of the high cost of False Positives. The model was optimized to find the **optimal probability threshold** that maximizes **Net Value** (balancing $96 revenue vs. $55 LTV loss).
 
 ### ✅ Key Outcome
-Our analysis revealed an optimal probability threshold of **0.31**. By targeting Basic subscribers with a predicted upgrade probability of 0.31 or higher, StreamPlus can expect a projected conversion rate of **46-47%** among contacted subscribers. This strategy dramatically reduces churn risk and significantly **maximizes Net LTV Impact**. The model identifies heavy device users, highly engaged content viewers, and long-term subscribers as prime candidates for successful targeting.
+Our analysis revealed an optimal probability threshold of **0.31**. By targeting Basic subscribers with a predicted upgrade probability of 0.31 or higher, StreamPlus could expect a projected conversion rate of **46-47%** among contacted subscribers. This strategy reduces churn risk and significantly **maximizes Net LTV Impact**. The model identifies heavy device users, highly engaged content viewers, and long-term subscribers as prime candidates for successful targeting.
 
