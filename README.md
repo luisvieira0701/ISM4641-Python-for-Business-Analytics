@@ -3,9 +3,9 @@ This is a repository containing solutions to various business incidents. I am or
 
 Each weekly folder will have three main files:
 
-1. Integrative Tasks - These are the projects I am working on weekly that will be graded
+1. Integrative Tasks - These are the projects I am working on weekly 
 3. Gemini Chat History - The gemini chat history. Here you are able to see my thought process and how I am implementing code, and making projects more organized, functional, and efficient.
-4. Others - The other files are likely slides or class notes I refer to when completing these projects.
+4. Others - The other files are likely slides or notes from lectures.
 
 Disclaimer: Artifical Intelligence was also utilized for most organization of files and folders along with instructions and comments.
 
